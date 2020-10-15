@@ -15,11 +15,20 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="javaeeApplication" name="javaEEApplication">
+    <facet type="hibernate" name="Hibernate">
       <configuration>
-        <descriptors>
-          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/META-INF/application.xml" />
-        </descriptors>
+        <datasource-map />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping>
+          <factory-entry name="entityManagerFactory" />
+        </datasource-mapping>
+        <naming-strategy-map />
       </configuration>
     </facet>
   </component>
@@ -41,7 +50,6 @@
     <orderEntry type="library" name="Spring Batch-2.2.6" level="project" />
     <orderEntry type="library" name="Spring Web Services-2.0.2" level="project" />
     <orderEntry type="library" name="Spring Data JPA-2.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Spring Security-5.2.1" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.3.2.RELEASE" level="project" />
@@ -56,9 +64,7 @@
     <orderEntry type="library" name="javax.json.bind-api-1.0" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="ConcurrencyUtilities-1.1" level="project" />
-    <orderEntry type="library" name="Validation API-2.0.1.Final" level="project" />
     <orderEntry type="library" name="bootstrap" level="application" />
-    <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf:Release1" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-conditionalcomments:Release1" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-tiles2:Release1" level="project" />
@@ -68,5 +74,15 @@
     <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity4:Release1" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring3:Release1" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring4:Release1" level="project" />
+    <orderEntry type="library" name="Hibernate 5.4.11-5.4.11" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-conditionalcomments:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-tiles2:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-java8time:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-testing:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity3:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity4:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring3:Release2" level="project" />
+    <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring4:Release2" level="project" />
   </component>
 </module>

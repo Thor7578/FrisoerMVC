@@ -33,7 +33,7 @@ public class DummyData
         createCut("Kvindeklip", "Voksen", 600, createBarber("Thor Hansen"));
         createCut("Herreklip", "Voksen", 350, createBarber("Bodil Larsen"));
         createCut("Børneklip", "Barn", 150, createBarber("Lise-Lotte Kofoed"));
-        createCut("Pensionistklio", "Pensionist", 100, createBarber("Emil Bjergaard"));
+        createCut("Pensionistklip", "Pensionist", 100, createBarber("Emil Bjergaard"));
     }
 
     //CRUD Methods under Dummy Data
@@ -42,6 +42,8 @@ public class DummyData
     // Create Cut Method
     private Cut createCut(String title, String Category, int price, Barber barbers)
     {
+        Set<Barber> barbersSet = new HashSet<>();
+
         Cut cut = new Cut();
         cut.setTitle(title);
         cut.setCategory(Category);

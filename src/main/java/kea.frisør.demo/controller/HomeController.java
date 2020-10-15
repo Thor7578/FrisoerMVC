@@ -29,7 +29,7 @@ public class HomeController
     @GetMapping("/")
     public String index (Model model)
     {
-        Iterable<Cut> cuts = cutRepository.findCutsByVisibleOnSiteTrue(); // Read method from repository
+        Iterable<Cut> cuts = cutRepository.findAll(); // Read method from repository
 
         System.out.println("Printing cuts just before they are shown");
         cuts.forEach(System.out::println);

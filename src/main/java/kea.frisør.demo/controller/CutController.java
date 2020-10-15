@@ -27,8 +27,9 @@ public class CutController
 
     //Read all
     @GetMapping("/cuts")
-    public String readAllCuts(Model model) {
-        model.addAttribute("cuts", cutRepository.findCutsByVisibleOnSiteTrue());
+    public String readAllCuts(Model model)
+    {
+        model.addAttribute("cuts", cutRepository.findAll());
         return "cuts";
     }
 

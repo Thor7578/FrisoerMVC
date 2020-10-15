@@ -1,4 +1,15 @@
 package kea.frisør.demo.model;
 
-public class Booking {
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Booking
+{
+    @JoinColumn(name = "cut_id")
+    @ManyToOne
+    Cut cut;
+
 }

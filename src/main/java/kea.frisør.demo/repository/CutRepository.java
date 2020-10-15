@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface CutRepository extends CrudRepository<Cut, Integer>
 {
-    List<Cut> findCutsByTitleContaining (String title);
-    List<Cut> findCutsByVisibleOnSiteTrue();
+    List<Cut> findAll();
 }

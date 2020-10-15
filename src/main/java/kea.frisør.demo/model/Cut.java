@@ -9,6 +9,7 @@ import java.util.Set;
 @Entity
 public class Cut
 {
+    @javax.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
@@ -17,7 +18,7 @@ public class Cut
     public Set<Barber> barbers;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "cut")
-    public Set<Booking> bookings;
+    public Set<Cut> cuts;
 
     public String title;
     public String category;
