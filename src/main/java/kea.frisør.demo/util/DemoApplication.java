@@ -1,4 +1,4 @@
-package kea.frisør.demo;
+package src.main.kea.frisør.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
